@@ -1,0 +1,449 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    background:black;
+    color:white;
+}
+
+/* INTRO */
+
+.intro{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    radial-gradient(circle at center,
+    #111 0%,
+    black 70%);
+}
+
+.intro-content{
+    animation:fadeIn 2s ease;
+}
+
+.small-text{
+    color:#aaa;
+    margin-bottom:10px;
+}
+
+.intro h1{
+
+    font-size:4rem;
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,0.5);
+}
+
+#enterBtn{
+
+    padding:15px 35px;
+
+    border:none;
+    border-radius:40px;
+
+    background:white;
+    color:black;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+#enterBtn:hover{
+
+    transform:scale(1.1);
+
+    box-shadow:0 0 25px white;
+}
+
+/* UNIVERSE */
+
+.universe{
+
+    position:relative;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at top,
+    #071427 0%,
+    #02050d 40%,
+    #000 100%);
+}
+
+/* BACKGROUND */
+
+.stars,
+.twinkling,
+.nebula{
+
+    position:absolute;
+    inset:0;
+}
+
+.stars{
+
+    background:
+    transparent url("https://www.transparenttextures.com/patterns/stardust.png")
+    repeat;
+
+    opacity:0.8;
+
+    animation:
+    moveStars 200s linear infinite;
+}
+
+.twinkling{
+
+    background:
+    radial-gradient(circle,
+    rgba(255,255,255,0.15) 1px,
+    transparent 1px);
+
+    background-size:200px 200px;
+
+    animation:
+    twinkle 10s infinite alternate;
+}
+
+.nebula{
+
+    background:
+
+    radial-gradient(circle at 20% 30%,
+    rgba(111,0,255,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at 80% 20%,
+    rgba(0,140,255,0.15),
+    transparent 30%),
+
+    radial-gradient(circle at 60% 80%,
+    rgba(255,0,140,0.12),
+    transparent 30%);
+
+    filter:blur(40px);
+}
+
+/* MEMORYS */
+
+.memory-container{
+
+    position:relative;
+
+    width:100%;
+    height:100%;
+}
+
+.memory{
+
+    position:absolute;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:10px;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    transition:0.4s;
+
+    z-index:10;
+
+    animation:
+    float 4s ease-in-out infinite;
+}
+
+.memory:hover{
+
+    transform:scale(1.2);
+}
+
+.memory span{
+
+    font-size:0.9rem;
+    letter-spacing:1px;
+}
+
+/* POSITIONS */
+
+.memory:nth-child(1){
+
+    top:15%;
+    left:15%;
+}
+
+.memory:nth-child(2){
+
+    top:35%;
+    left:50%;
+}
+
+.memory:nth-child(3){
+
+    top:65%;
+    left:20%;
+}
+
+.memory:nth-child(4){
+
+    top:18%;
+    right:20%;
+}
+
+.memory:nth-child(5){
+
+    top:58%;
+    right:12%;
+}
+
+.memory:nth-child(6){
+
+    top:42%;
+    right:18%;
+}
+
+.memory:nth-child(7){
+
+    bottom:12%;
+    left:45%;
+}
+
+.memory:nth-child(8){
+
+    bottom:15%;
+    right:25%;
+}
+
+.memory:nth-child(9){
+
+    top:10%;
+    left:48%;
+}
+
+/* COLORS */
+
+.memory-gold{
+    color:#ffd700;
+    text-shadow:0 0 20px #ffd700;
+}
+
+.memory-blue{
+    color:#7dcfff;
+    text-shadow:0 0 20px #7dcfff;
+}
+
+.memory-pink{
+    color:#ff8bdc;
+    text-shadow:0 0 20px #ff8bdc;
+}
+
+.memory-yellow{
+    color:#ffe066;
+    text-shadow:0 0 25px #ffe066;
+}
+
+.memory-white{
+    color:white;
+    text-shadow:0 0 20px white;
+}
+
+.memory-rain{
+    color:#8ab4ff;
+    text-shadow:0 0 20px #8ab4ff;
+}
+
+.memory-red{
+    color:#ff6b81;
+    text-shadow:0 0 20px #ff6b81;
+}
+
+.memory-orange{
+    color:#ffb347;
+    text-shadow:0 0 20px #ffb347;
+}
+
+.memory-purple{
+    color:#c77dff;
+    text-shadow:0 0 20px #c77dff;
+}
+
+/* POPUP */
+
+.popup{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,0.8);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:100;
+}
+
+.popup-content{
+
+    width:85%;
+    max-width:1000px;
+
+    background:
+    rgba(20,20,20,0.95);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    position:relative;
+}
+
+.popup-content h2{
+
+    margin-bottom:20px;
+}
+
+.popup-content p{
+
+    color:#ccc;
+    line-height:1.8;
+}
+
+/* SCROLL GALLERY */
+
+.scroll-gallery{
+
+    display:flex;
+
+    gap:20px;
+
+    overflow-x:auto;
+
+    margin-top:25px;
+
+    padding-bottom:10px;
+}
+
+.scroll-gallery img{
+
+    min-width:250px;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:0.4s;
+
+    cursor:pointer;
+}
+
+.scroll-gallery img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.3);
+}
+
+/* CLOSE */
+
+.close-btn{
+
+    position:absolute;
+
+    top:20px;
+    right:20px;
+
+    background:none;
+    border:none;
+
+    color:white;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+}
+
+/* UTILITY */
+
+.hidden{
+    display:none;
+}
+
+/* ANIMATION */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes moveStars{
+
+    from{
+        background-position:0 0;
+    }
+
+    to{
+        background-position:-10000px 5000px;
+    }
+}
+
+@keyframes twinkle{
+
+    from{
+        opacity:0.3;
+    }
+
+    to{
+        opacity:1;
+    }
+}

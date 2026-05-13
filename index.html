@@ -1,0 +1,745 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Constellations Of Us
+    </title>
+
+    <link rel="stylesheet"
+    href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- MUSIC -->
+    <!-- ========================= -->
+
+    <!-- UNIVERSE MUSIC -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="music/homescreen.mp3"
+        type="audio/mp3">
+
+    </audio>
+
+
+    <!-- POPUP MUSIC -->
+
+    <audio id="popupMusic" loop></audio>
+
+
+
+    <!-- ========================= -->
+    <!-- INTRO -->
+    <!-- ========================= -->
+
+    <section class="intro"
+    id="intro">
+
+        <div class="intro-content">
+
+            <p class="small-text">
+                Some people leave memories.
+            </p>
+
+            <h1>
+                You became mine.
+                <br>
+                Happy Birthday My Love! 
+            </h1>
+
+            <button id="enterBtn">
+                ENTER MY UNIVERSE ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- UNIVERSE -->
+    <!-- ========================= -->
+
+    <section class="universe hidden"
+    id="universe">
+
+        <!-- BACKGROUND -->
+
+        <div class="stars"></div>
+
+        <div class="twinkling"></div>
+
+        <div class="nebula"></div>
+
+
+        <!-- MEMORY STARS -->
+
+        <div class="memory-container">
+
+            <!-- BLUNDERS -->
+
+            <div class="memory memory-gold"
+            onclick="openPopup(
+            'blunderPopup',
+            'music/blunder.mp3'
+            )">
+
+                ✨
+
+                <span>
+                    BLUNDERS
+                </span>
+
+            </div>
+
+
+            <!-- DREAM -->
+
+            <div class="memory memory-blue"
+            onclick="openPopup(
+            'dreamPopup',
+            'music/dream.mp3'
+            )">
+
+                🌙
+
+                <span>
+                    DREAM!
+                </span>
+
+            </div>
+
+
+            <!-- FAMILY -->
+
+            <div class="memory memory-pink"
+            onclick="openPopup(
+            'familyPopup',
+            'music/family.mp3'
+            )">
+
+                🏡
+
+                <span>
+                    FAMILY
+                </span>
+
+            </div>
+
+
+            <!-- GOLD FOREVER -->
+
+            <div class="memory memory-yellow"
+            onclick="openPopup(
+            'goldPopup',
+            'music/gold.mp3'
+            )">
+
+                ⭐
+
+                <span>
+                    GOLD FOREVER
+                </span>
+
+            </div>
+
+
+            <!-- HOME -->
+
+            <div class="memory memory-white"
+            onclick="openPopup(
+            'homePopup',
+            'music/home.mp3'
+            )">
+
+                🤍
+
+                <span>
+                    HOME
+                </span>
+
+            </div>
+
+
+            <!-- STRUGGLING DAYS -->
+
+            <div class="memory memory-rain"
+            onclick="openPopup(
+            'strugglePopup',
+            'music/struggle.mp3'
+            )">
+
+                🌧
+
+                <span>
+                    STRUGGLING DAYS
+                </span>
+
+            </div>
+
+
+            <!-- TERA HERO -->
+
+            <div class="memory memory-red"
+            onclick="openPopup(
+            'heroPopup',
+            'music/hero.mp3'
+            )">
+
+                ❤️
+
+                <span>
+                    TERA HERO
+                </span>
+
+            </div>
+
+
+            <!-- TERA MERA LUNCH -->
+
+            <div class="memory memory-orange"
+            onclick="openPopup(
+            'lunchPopup',
+            'music/lunch.mp3'
+            )">
+
+                🍜
+
+                <span>
+                    TERA MERA LUNCH!
+                </span>
+
+            </div>
+
+
+            <!-- THE TIME WE MET -->
+
+            <div class="memory memory-purple"
+            onclick="openPopup(
+            'metPopup',
+            'music/met.mp3'
+            )">
+
+                ⏳
+
+                <span>
+                    THE TIME WE MET
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ========================= -->
+    <!-- POPUPS -->
+    <!-- ========================= -->
+
+
+
+    <!-- BLUNDERS -->
+
+    <div class="popup hidden"
+    id="blunderPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('blunderPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                BLUNDERS ✨
+            </h2>
+
+            <p>
+                “Hi beautiful Bhandar Singh Choudhary 😌 aka chota aadmi.
+I spent half my life teasing you… and finally got the perfect chance to expose your legendary blunder pics here 💀✨
+“You are proof that a human can survive entirely on confidence and blunders 😭❤️”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/blunder1.jpg">
+
+                <img src="images/blunder2.jpg">
+
+                <img src="images/blunder3.jpg">
+                <img src="images/blunder4.jpg">
+                <img src="images/blunder5.jpg">
+                <img src="images/blunder6.jpg">
+                <img src="images/blunder7.jpg">
+                <img src="images/blunder8.jpg">
+                <img src="images/blunder9.jpg">
+                <img src="images/blunder10.jpg">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DREAM -->
+
+    <div class="popup hidden"
+    id="dreamPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('dreamPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                DREAM! 🌙
+            </h2>
+
+            <p>
+                “We sit and dream about visiting all those beautiful places together ✨
+New cities, peaceful nights, random walks, food dates, pretty views…
+but honestly, the place matters less when I’m with you 😌❤️
+
+One day Inshallah,
+all these little dreams we talk about will become real memories.
+
+Until then…
+I’ll keep dreaming with you.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/dream1.jpg">
+
+                <img src="images/dream2.jpg">
+
+                <img src="images/dream3.jpg">
+                <img src="images/dream4.jpg">
+                <img src="images/dream5.jpg">
+                <img src="images/dream6.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FAMILY -->
+
+    <div class="popup hidden"
+    id="familyPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('familyPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                FAMILY 🏡
+            </h2>
+
+            <p>
+               “I just wish for peace, happiness, and endless smiles to keep growing in our families day by day ❤️✨
+
+May Allah always keep our homes filled with warmth, love, good health, and togetherness.
+
+And Inshallah,
+may happiness always stay around the people we love most.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/family1.jpg">
+
+                <img src="images/family2.jpg">
+
+                <img src="images/family3.jpg">
+                <img src="images/family4.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GOLD FOREVER -->
+
+    <div class="popup hidden"
+    id="goldPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('goldPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                GOLD FOREVER ⭐
+            </h2>
+
+            <p>
+                “No matter how many ups, downs, mood swings, or stupid fights come between us…
+what we have still feels precious to me ✨
+
+And honestly?
+I’m just happy with you.
+
+I pray that this happiness between us keeps growing more and more every day ❤️
+More laughter, more peace, more memories, more love… us against everything.
+
+Some connections are temporary.
+But you?
+Gold forever 😌⭐
+
+Inshallah, may Allah always protect our bond and increase the happiness between us.”
+            </p>
+
+            <div class="scroll-gallery">
+
+               <img src="images/gold1.jpg">
+<img src="images/gold2.jpg">
+<img src="images/gold3.jpg">
+<img src="images/gold4.jpg">
+<img src="images/gold5.jpg">
+<img src="images/gold6.jpg">
+<img src="images/gold7.jpg">
+<img src="images/gold8.jpg">
+<img src="images/gold9.jpg">
+<img src="images/gold10.jpg">
+<img src="images/gold12.jpg">
+<img src="images/gold13.jpg">
+<img src="images/gold14.jpg">
+<img src="images/gold15.jpg">
+<img src="images/gold16.jpg">
+<img src="images/gold17.jpg">
+<img src="images/gold18.jpg">
+<img src="images/gold19.jpg">
+<img src="images/gold20.jpg">
+<img src="images/gold21.jpg">
+<img src="images/gold22.jpg">
+<img src="images/gold23.jpg">
+<img src="images/gold24.jpg">
+<img src="images/gold25.jpg">
+<img src="images/gold26.jpg">
+<img src="images/gold27.jpg">
+<img src="images/gold28.jpg">
+<img src="images/gold29.jpg">
+<img src="images/gold30.jpg">
+<img src="images/gold31.jpg">
+<img src="images/gold32.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- HOME -->
+
+    <div class="popup hidden"
+    id="homePopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('homePopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                HOME 🤍
+            </h2>
+
+            <p>
+               “No matter where life goes…
+you somehow started feeling like home.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/home1.jpg">
+
+                <img src="images/home2.jpg">
+
+                <img src="images/home3.jpg">
+                <img src="images/home4.jpg">
+                <img src="images/home5.jpg">
+                <img src="images/home6.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- STRUGGLING DAYS -->
+
+    <div class="popup hidden"
+    id="strugglePopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('strugglePopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                STRUGGLING DAYS 🌧
+            </h2>
+
+            <p>
+               “There was a time when everything felt heavy…
+jobs, college, future, pressure from people — all at once.
+
+Sometimes I had work while you didn’t,
+sometimes both of us were just worried about what would happen next.
+And I know how tired you were from constantly carrying everyone’s expectations on your shoulders.
+
+But even during those stressful days,
+we stayed beside each other ❤️
+
+I still remember trying to calm you down, reminding you that this phase wouldn’t last forever…
+and look at us now 😌✨
+
+Maybe those struggling days were painful,
+but they taught us how to hold onto each other during the hardest moments.
+
+And honestly?
+I’m proud of us for surviving them together.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/struggle1.jpg">
+
+                <img src="images/struggle2.jpg">
+
+                <img src="images/struggle3.jpg">
+                <img src="images/struggle4.jpg">
+                <img src="images/struggle5.jpg">
+                <img src="images/struggle6.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TERA HERO -->
+
+    <div class="popup hidden"
+    id="heroPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('heroPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                TERA HERO ❤️
+            </h2>
+
+            <p>
+                “Thank you for making me feel special in your story.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/hero1.jpg">
+
+                <img src="images/hero2.jpg">
+
+                <img src="images/hero3.jpg">
+                <img src="images/hero4.jpg">
+                <img src="images/hero5.jpg">
+                <img src="images/hero6.jpg">
+                <img src="images/hero7.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TERA MERA LUNCH -->
+
+    <div class="popup hidden"
+    id="lunchPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('lunchPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                TERA MERA LUNCH 🍜
+            </h2>
+
+            <p>
+               “Remember those days when I used to cook for you 😌❤️
+and then you used to make dinner for us later like a perfect little team ✨
+
+And me?
+jumping the gate just to come see you at your PG 😭💀
+Risking my life for food and love both.
+
+Those weren’t luxury moments,
+but honestly they felt special in the purest way.
+
+Just us, tired from life, sharing food, laughing, talking, and finding peace in each other’s company.
+
+Some of the best memories are hidden in those simple little moments ❤️🍜”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/lunch1.jpg">
+
+                <img src="images/lunch2.jpg">
+
+                <img src="images/lunch3.jpg">
+
+                <img src="images/lunch4.jpg">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- THE TIME WE MET -->
+
+    <div class="popup hidden"
+    id="metPopup">
+
+        <div class="popup-content">
+
+            <button class="close-btn"
+            onclick="closePopup('metPopup')">
+
+                ✕
+
+            </button>
+
+            <h2>
+                THE TIME WE MET ⏳
+            </h2>
+
+            <p>
+                “We both had to go through a huge roller coaster journey…
+mostly downs and downs 😭
+While most people start their story with beautiful moments,
+we started ours during the bad phase of life.
+
+But maybe that’s what made us stronger.
+We accepted the chaos, the struggles, the misunderstandings, and still stayed together.
+
+And then came that class…
+the moment we met ✨
+Luckily my stream never changed after that, because honestly?
+that became one of the luckiest moments of my life.
+
+You got me 😌❤️
+Yes YOU lucky girl…
+you got a hero boyfriend like me bwahahahahah 😭✨
+
+But truly…
+I’m grateful for every bad moment that somehow led me to you.
+
+Now life finally feels peaceful, happy, and real with you.
+And Inshallah, if Allah wills it,
+it will stay this beautiful forever ❤️
+
+Alhamdulillah for us.”
+            </p>
+
+            <div class="scroll-gallery">
+
+                <img src="images/met1.jpg">
+
+                <img src="images/met2.jpg">
+
+                <img src="images/met3.jpg">
+                <img src="images/met4.jpg">
+                <img src="images/met5.jpg">
+                <img src="images/met6.jpg">
+                <img src="images/met7.jpg">
+                <img src="images/met8.jpg">
+                <img src="images/met9.jpg">
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
